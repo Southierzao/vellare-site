@@ -1,4 +1,5 @@
 import { Button } from "../components/ui/button";
+import InstagramAnalyzer from "@/components/InstagramAnalyzer";
 import { Card, CardContent } from "../components/ui/card";
 
 export default function Home() {
@@ -60,7 +61,11 @@ export default function Home() {
           ))}
         </div>
       </section>
-
+      
+      {/* Analisador de Instagram */}
+      <div className="py-20 bg-white">
+        <InstagramAnalyzer />
+        </div>
       {/* Contato */}
       <section className="bg-zinc-50 py-20 px-6 text-center">
         <h2 className="text-3xl font-semibold mb-6">Fale com a Gente</h2>
