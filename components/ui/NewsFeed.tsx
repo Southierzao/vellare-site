@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
-
 type NewsItem = {
   title: string;
+  summary?: string;
   link: string;
   pubDate?: string;
 };
@@ -28,7 +27,14 @@ export default function NewsFeed() {
             className="block border border-zinc-200 rounded p-6 hover:shadow-md transition"
           >
             <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-            {item.pubDate && <p className="text-sm text-zinc-500">{new Date(item.pubDate).toLocaleDateString()}</p>}
+            {item.summary && (
+              <p className="text-sm text-zinc-600">{item.summary}</p>
+            )}
+            {item.pubDate && (
+              <p className="text-xs text-zinc-400 mt-2">
+                {new Date(item.pubDate).toLocaleDateString()}
+              </p>
+            )}
           </a>
         ))}
       </div>
