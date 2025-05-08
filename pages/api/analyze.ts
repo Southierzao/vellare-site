@@ -11,20 +11,21 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const prompt = `
 Você é um especialista em marketing digital com foco em Instagram. 
-Analise o perfil @${username} com base no seguinte cenário fictício:
+Analise o perfil ${username} com base no seguinte cenário fictício:
 
 - O perfil é público, tem boas imagens, mas baixa frequência de postagens.
 - Ele representa uma empresa de conteúdo digital que busca atrair mais clientes.
 - Desejamos uma resposta estruturada em tópicos com subtítulos.
 
 Responda no seguinte formato:
+Porém no lugar da numeração, coloque um emoji que representa cada um dos tópicos.
 
 1. **Visão Geral**
 2. **Pontos Fortes**
 3. **Pontos de Melhoria**
 4. **Recomendações Estratégicas**
 5. **Estimativa de Crescimento com Tráfego Pago**
-6. **Conclusão com Tom Consultivo**
+6. **Conclusão**
 
 Seja claro, objetivo, e utilize linguagem profissional, como em um diagnóstico para um cliente real.
 `;
