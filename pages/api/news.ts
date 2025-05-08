@@ -9,7 +9,7 @@ type NewsItem = {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const parser = new Parser<{}, NewsItem>();
-  const feedUrl = "https://later.com/blog/rss/";
+  const feedUrl = "https://blog.hootsuite.com/feed/";
 
   try {
     const feed = await parser.parseURL(feedUrl);
