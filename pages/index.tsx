@@ -1,5 +1,5 @@
 import { Button } from "../components/ui/button";
-import InstagramAnalyzer from "@/components/InstagramAnalyzer";
+import InstagramAnalyzer from "../components/InstagramAnalyzer";
 import { Card, CardContent } from "../components/ui/card";
 
 export default function Home() {
