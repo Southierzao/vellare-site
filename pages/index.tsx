@@ -44,22 +44,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Blog */}
-      <section className="py-20 px-6 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-semibold text-center mb-12">Conteúdos Recentes</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            <NewsFeed />
-          ].map((post, i) => (
-            <Card key={i} className="bg-white border border-zinc-200">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold mb-2">{post.title}</h3>
-                <p className="text-zinc-600">{post.summary}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
+      {/* Notícias Dinâmicas */}
+<NewsFeed />
       
       {/* Analisador de Instagram */}
       <div className="py-20 bg-white">
