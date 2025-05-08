@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 type NewsItem = {
   title: string;
   summary?: string;
