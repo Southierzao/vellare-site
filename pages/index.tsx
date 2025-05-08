@@ -1,6 +1,7 @@
 import { Button } from "../components/ui/button";
 import InstagramAnalyzer from "../components/ui/InstagramAnalyzer";
 import { Card, CardContent } from "../components/ui/card";
+import NewsFeed from "../components/ui/NewsFeed";
 
 export default function Home() {
   return (
@@ -48,9 +49,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold text-center mb-12">Conteúdos Recentes</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { title: "5 Erros no Meta Ads", summary: "Evite desperdício de verba e otimize resultados." },
-            { title: "Funil de Vendas com Tráfego", summary: "Como montar um funil eficiente com anúncios." },
-            { title: "Diferença entre tráfego pago e SEO", summary: "Saiba quando usar cada estratégia." }
+            <NewsFeed />
           ].map((post, i) => (
             <Card key={i} className="bg-white border border-zinc-200">
               <CardContent className="p-6">
